@@ -13,9 +13,11 @@
 		756E7A2325D97E0E00701680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756E7A2125D97E0E00701680 /* Main.storyboard */; };
 		756E7A2525D97E0E00701680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756E7A2425D97E0E00701680 /* Assets.xcassets */; };
 		756E7A2825D97E0E00701680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756E7A2625D97E0E00701680 /* LaunchScreen.storyboard */; };
+		A209622B2AED880A2862E1C8 /* Pods_TechMonOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46149F7E9762D2C741EAB2F6 /* Pods_TechMonOnline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46149F7E9762D2C741EAB2F6 /* Pods_TechMonOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMonOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		756E7A1825D97E0E00701680 /* TechMonOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMonOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756E7A1B25D97E0E00701680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756E7A1D25D97E0E00701680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		756E7A2425D97E0E00701680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		756E7A2725D97E0E00701680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		756E7A2925D97E0E00701680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D950A2260B8F4ECC7A17A4AD /* Pods-TechMonOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonOnline.debug.xcconfig"; path = "Target Support Files/Pods-TechMonOnline/Pods-TechMonOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		FC30A948ECEE0D858CBE82D8 /* Pods-TechMonOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonOnline.release.xcconfig"; path = "Target Support Files/Pods-TechMonOnline/Pods-TechMonOnline.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A209622B2AED880A2862E1C8 /* Pods_TechMonOnline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				756E7A1A25D97E0E00701680 /* TechMonOnline */,
 				756E7A1925D97E0E00701680 /* Products */,
+				DB31EA72C89D61F75D95969B /* Pods */,
+				C51FBD1AEFA8D7DF58E46CB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = TechMonOnline;
 			sourceTree = "<group>";
 		};
+		C51FBD1AEFA8D7DF58E46CB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46149F7E9762D2C741EAB2F6 /* Pods_TechMonOnline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB31EA72C89D61F75D95969B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D950A2260B8F4ECC7A17A4AD /* Pods-TechMonOnline.debug.xcconfig */,
+				FC30A948ECEE0D858CBE82D8 /* Pods-TechMonOnline.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 756E7A2C25D97E0E00701680 /* Build configuration list for PBXNativeTarget "TechMonOnline" */;
 			buildPhases = (
+				9177E409F4EECFFFFD95640F /* [CP] Check Pods Manifest.lock */,
 				756E7A1425D97E0E00701680 /* Sources */,
 				756E7A1525D97E0E00701680 /* Frameworks */,
 				756E7A1625D97E0E00701680 /* Resources */,
+				F06982D7C0545268FAF61FDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9177E409F4EECFFFFD95640F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMonOnline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06982D7C0545268FAF61FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMonOnline/Pods-TechMonOnline-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMonOnline/Pods-TechMonOnline-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechMonOnline/Pods-TechMonOnline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		756E7A1425D97E0E00701680 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		756E7A2D25D97E0E00701680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D950A2260B8F4ECC7A17A4AD /* Pods-TechMonOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		756E7A2E25D97E0E00701680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC30A948ECEE0D858CBE82D8 /* Pods-TechMonOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
